@@ -1,8 +1,79 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* Ce fichier est le fichier css du projet Wild together */
+
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+@font-face {
+  font-family: 'alwynregular';
+  src: url('alwyn_regular-webfont.eot');
+  src: url('alwyn_regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('alwyn_regular-webfont.woff2') format('woff2'),
+       url('alwyn_regular-webfont.woff') format('woff'),
+       url('alwyn_regular-webfont.ttf') format('truetype'),
+       url('alwyn_regular-webfont.svg#alwynregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
-a {
-  color: #00B7FF;
+@font-face {
+  font-family: 'alwynbold';
+  src: url('alwyn_bold-webfont.eot');
+  src: url('alwyn_bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('alwyn_bold-webfont.woff2') format('woff2'),
+       url('alwyn_bold-webfont.woff') format('woff'),
+       url('alwyn_bold-webfont.ttf') format('truetype'),
+       url('alwyn_bold-webfont.svg#alwynbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  background-color: #fbfbfb;
+}
+
+p {
+  color: #35383a;
+}
+
+header {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'alwynregular';
+}
+
+.logo {
+  width: 200px;
+  border-radius: 5px;
+}
+
+#s1 {
+  text-align: center;
+  font-family: 'alwynregular';
+  font-size: 1.5em;
+  background-color: #fba858;
+  padding: 20px;
+}
+
+.bologo {
+  width: 80px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #58c4b8;
+  height: 150px;
+  font-family: 'alwynbold';
+}
+
+.footer {
+  margin-top: 15px;
 }
