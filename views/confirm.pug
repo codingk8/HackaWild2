@@ -1,6 +1,10 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  // Section 1 début Texte d'accueil
+  section#s1
+    p
+      | Tes mises à jour vont être rapidement prises en compte.
+    p Merci de ta visite et à bientôt 😉
+    a(href="/" class="btn gris") Retour à l'accueil
+  // Section 1 Fin Texte d'accueil
