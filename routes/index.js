@@ -32,15 +32,18 @@ router.get('/wilderstogether', function(req, res, next) {
   res.render('wilders');
 });
 
-/* GET Affichage de la page de mise à jour, qui donne une 404 pour l'instant */
+/* GET Affichage de la page de mise à jour, qui donne la page de mise à jour des infos personnelles */
 router.get('/miseajour', function(req, res, next) {
   res.render('update');
 });
+
+
 
 /* GET /admin/create
 router.get('/create', function(req, res, next) {
 	// Formulaire de création d'article
 	res.render('admin-create');
 }); */
+
 
 module.exports = router;

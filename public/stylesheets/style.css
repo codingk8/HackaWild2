@@ -71,6 +71,7 @@ header {
   margin-bottom: 15px;
 }
 
+
 .secgris {
   text-align: center;
   font-family: 'alwynregular';
@@ -94,6 +95,7 @@ header {
   text-align: center;
   font-family: 'alwynregular';
   font-size: 1.5em;
+  padding: 50px;
 }
 
 .bleu
@@ -126,6 +128,8 @@ footer {
   height: 150px;
   font-family: 'alwynbold';
   border-radius: 15px;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 .footer {
