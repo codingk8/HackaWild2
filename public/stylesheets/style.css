@@ -1,8 +1,137 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* Ce fichier est le fichier css du projet Wild together */
+
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+@font-face {
+  font-family: 'alwynregular';
+  src: url('fonts/alwyn_regular-webfont.eot');
+  src: url('fonts/alwyn_regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/alwyn_regular-webfont.woff2') format('woff2'),
+       url('fonts/alwyn_regular-webfont.woff') format('woff'),
+       url('fonts/alwyn_regular-webfont.ttf') format('truetype'),
+       url('fonts/alwyn_regular-webfont.svg#alwynregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
-a {
-  color: #00B7FF;
+@font-face {
+  font-family: 'alwynbold';
+  src: url('fonts/alwyn_bold-webfont.eot');
+  src: url('fonts/alwyn_bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/alwyn_bold-webfont.woff2') format('woff2'),
+       url('fonts/alwyn_bold-webfont.woff') format('woff'),
+       url('fonts/alwyn_bold-webfont.ttf') format('truetype'),
+       url('fonts/alwyn_bold-webfont.svg#alwynbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body {
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  background-color: #fbfbfb;
+}
+
+p {
+  color: #35383a;
+}
+
+.gris {
+  font-size : 0.8em;
+  color: #35383a;
+  background-color: #7b7b7b;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+header {
+  text-align: center;
+  font-size: 2em;
+  font-family: 'alwynregular';
+}
+
+.logo {
+  width: 200px;
+  border-radius: 5px;
+}
+
+#s1 {
+  text-align: center;
+  font-family: 'alwynregular';
+  font-size: 1.5em;
+  background-color: #fba858;
+  padding: 50px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+
+.secgris {
+  text-align: center;
+  font-family: 'alwynregular';
+  font-size: 1.5em;
+  background-color: #7b7b7b;
+  padding: 50px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.wilders {
+  text-align: center;
+  font-family: 'alwynregular';
+  font-size: 1.5em;
+  padding: 50px;
+  border-radius: 15px;
+  height: 150px;
+}
+
+#s3 {
+  text-align: center;
+  font-family: 'alwynregular';
+  font-size: 1.5em;
+  padding: 50px;
+}
+
+.bleu
+{
+  font-size : 0.8em;
+  color: #35383a;
+  background-color: #58c4b8;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.orange
+{
+  font-size : 0.8em;
+  color: #35383a;
+  background-color: #fba858;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.bologo {
+  width: 80px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #58c4b8;
+  height: 150px;
+  font-family: 'alwynbold';
+  border-radius: 15px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.footer {
+  margin-top: 15px;
 }
