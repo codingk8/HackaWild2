@@ -44,10 +44,11 @@ p {
 
 .gris {
   font-size : 0.8em;
-  color: #35383a;
   background-color: #7b7b7b;
   padding: 15px;
   border-radius: 15px;
+  font-family: 'alwynregular';
+  color: #f1f1f1;
 }
 
 header {
@@ -71,6 +72,13 @@ header {
   margin-bottom: 15px;
 }
 
+#form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50%;
+  margin-left: 25%;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
 
 .secgris {
   text-align: center;
@@ -105,6 +113,8 @@ header {
   background-color: #58c4b8;
   padding: 15px;
   border-radius: 15px;
+  font-family: 'alwynregular';
+  color: #f1f1f1;
 }
 
 .orange
@@ -114,6 +124,8 @@ header {
   background-color: #fba858;
   padding: 15px;
   border-radius: 15px;
+  font-family: 'alwynregular';
+  color: #f1f1f1;
 }
 
 .bologo {
@@ -135,3 +147,5 @@ footer {
 .footer {
   margin-top: 15px;
 }
+
+/* Mettre des media queries pour l'affichage sur devices, pour remettre le formulaire en largeur 100% */

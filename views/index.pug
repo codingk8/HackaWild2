@@ -3,10 +3,41 @@ extends layout
 block content
   // Section 1 début Texte d'accueil
   section#s1
-    p
-      | Tu es Wilder et tu veux te connecter à tes camarades Wilders ? Tu es au bon endroit !
+    p Tu es Wilder 🦄 et tu veux te connecter à tes camarades Wilders 🦉 🐼 🦍 ?
+    p Tu es au bon endroit ! 👏
     br
-    p Sur ce site, tu peux t'inscrire, indiquer ta date de naissance et ton adresse.
+    p Sur ce site, tu peux t'inscrire 📝, indiquer ta date 👶 de naissance et ton adresse 🏕.
     p
-      | ✨ Une fois connecté, tu voir les dates d'anniversaire de tes camarades et lesquels sont tes voisins. ✨
+      | ✨ Une fois connecté, tu vois les dates d'anniversaire 🎂 de tes camarades et lesquels sont tes voisins 🏘. ✨
   // Section 1 Fin Texte d'accueil
+  // Section 2 début Le formulaire
+  section.sectionform
+    .containerform
+      form#form
+        .form-group
+          label(for='prenom') Prénom
+          input#prenom.form-control(type='text', required='', placeholder='Inscris ici ton prénom')
+        .form-group
+          label(for='nom') Password
+          input#nom.form-control(type='text', required='', placeholder='Inscrit ici ton nom')
+        .form-group
+          label(for='identifiant') Identifiant
+          input#email.form-control(type='email', required='', placeholder="Ton identifiant c'est ton email")
+        .form-group
+          label(for='exampleInputPassword1') Mot de passe
+          input#motdepasse.form-control(type='password', required='', placeholder='Tu peux choisir ton mot de passe')
+        .form-group
+          label(for='naissance') Date de naissance
+          input#naissance.form-control(type='text', required='', placeholder='Tu étais sûrement un beau bébé !')
+        .form-group
+          label(for='adresse') Adresse
+          input#adresse.form-control(type='text', required='', placeholder="C'est bien rangé chez toi !")
+        .form-group
+          label(for='codepostal') Code postal
+          input#codepostal.form-control(type='text', required='', placeholder='Code postal')
+        .form-group
+          label(for='ville') Ville
+          input#ville.form-control(type='text', required='', placeholder='Ville')
+        a(href="/confirmation" class="btn orange") Je vous rejoins !
+        // button.btn.btn-default(type='submit') Je m'inscris !
+  // Section 2 fin Le formulaire

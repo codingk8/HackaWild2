@@ -57,32 +57,43 @@
     <!-- Section 1 Fin Texte d'accueil -->
 
     <!-- Section 2 début Le formulaire -->
-    <section id="s2">
-        <div class="container">
-            <form>
+    <section class="sectionform">
+        <div class="containerform">
+            <form id="form">
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" required class="form-control" id="prenom" placeholder="Inscris ici ton prénom">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="nom">Password</label>
+                    <input type="text" required class="form-control" id="nom" placeholder="Inscrit ici ton nom">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="identifiant">Identifiant</label>
+                    <input type="email" required class="form-control" id="email" placeholder="Ton identifiant c'est ton email">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputPassword1">Mot de passe</label>
+                    <input type="password" required class="form-control" id="motdepasse" placeholder="Tu peux choisir ton mot de passe">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="naissance">Date de naissance</label>
+                    <input type="text" required class="form-control" id="naissance" placeholder="Tu étais sûrement un beau bébé !">
+                </div>
+                <div class="form-group">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" required class="form-control" id="adresse" placeholder="C'est bien rangé chez toi !">
+                </div>
+                <div class="form-group">
+                    <label for="codepostal">Code postal</label>
+                    <input type="text" required class="form-control" id="codepostal" placeholder="Code postal">
+                </div>
+                <div class="form-group">
+                    <label for="ville">Ville</label>
+                    <input type="text" required class="form-control" id="ville" placeholder="Ville">
                 </div>
                 <button type="submit" class="btn btn-default">Je m'inscris !</button>
             </form>
-            
         </div>
     </section>
     <!-- Section 2 fin Le formulaire -->
