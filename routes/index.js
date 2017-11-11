@@ -37,6 +37,18 @@ router.get('/miseajour', function(req, res, next) {
   res.render('update');
 });
 
+/* POST Prise en compte des informations d'inscription */
+router.post('/', function(req, res, next) {
+	connection.query('INSERT INTO wilders (prenom, nom, email, motdepasse, naissance, adresse, codepostal, ville) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [req.body.prenom, req.body.nom, req.body.email, req.body.motdepasse, req.body.naissance, req.body.adresse, req.body.codepostal, req.body.ville], function(error) {
+		if (error) {
+			console.log(error);
+		} else {
+			res.redirect('/confirmation');
+		}
+	});
+});
+
+/* GET Affichage de la page d'administration des données personnelles */
 
 
 /* GET /admin/create
@@ -44,6 +56,5 @@ router.get('/create', function(req, res, next) {
 	// Formulaire de création d'article
 	res.render('admin-create');
 }); */
-
 
 module.exports = router;
