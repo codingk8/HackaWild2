@@ -37,6 +37,11 @@ router.get('/miseajour', function(req, res, next) {
   res.render('update');
 });
 
+/* GET Affichage de la page de mise à jour, qui donne la page de mise pour le mot de passe oublié */
+router.get('/motdepasseoublie', function(req, res, next) {
+  res.render('oubli');
+});
+
 /* POST Prise en compte des informations d'inscription */
 router.post('/', function(req, res, next) {
 	connection.query('INSERT INTO wilders (prenom, nom, email, motdepasse, naissance, adresse, codepostal, ville) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [req.body.prenom, req.body.nom, req.body.email, req.body.motdepasse, req.body.naissance, req.body.adresse, req.body.codepostal, req.body.ville], function(error) {

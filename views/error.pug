@@ -3,10 +3,10 @@ extends layout
 block content
   // Section 1 début Texte d'accueil
   section.secgris
-    p
-      | Mauvaise route ! Ce que tu cherches ne se trouve pas ici  🤔
+    img.gif(src='https://media.giphy.com/media/t0V4f559jXsHK/giphy.gif', alt='Gif animé avec Angelina Jolie')
+    p Oups ! Il se passe quelques chose de bizarre 🤔
     a(href="/" class="btn orange") Retour à l'accueil
   // Section 1 Fin Texte d'accueil
 
-  h2= error.status
-  pre #{error.stack}
+  // h2= error.status
+  // pre #{error.stack}

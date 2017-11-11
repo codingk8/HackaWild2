@@ -38,10 +38,6 @@ body {
   background-color: #fbfbfb;
 }
 
-p {
-  color: #35383a;
-}
-
 .gris {
   font-size : 0.8em;
   background-color: #7b7b7b;
@@ -62,14 +58,30 @@ header {
   border-radius: 5px;
 }
 
-#s1 {
+.textconnect {
+  text-align: center;
+  color: #58c4b8;
+  font-weight: bold;
+}
+
+.btconnect {
+  margin-left: 10px;
+}
+
+.sectioninscription {
   text-align: center;
   font-family: 'alwynregular';
-  font-size: 1.5em;
+  font-size: 1.1em;
   background-color: #fba858;
   padding: 50px;
   border-radius: 15px;
   margin-bottom: 15px;
+}
+
+.required {
+  text-align: center;
+  color: #fba858;
+  font-weight: bold;
 }
 
 #form {
@@ -82,12 +94,26 @@ header {
 
 .secgris {
   text-align: center;
+  color: #fbfbfb;
   font-family: 'alwynregular';
   font-size: 1.5em;
   background-color: #7b7b7b;
   padding: 50px;
   border-radius: 15px;
   margin-bottom: 15px;
+}
+
+.oubli {
+  text-align: center;
+  color: #fbfbfb;
+  font-family: 'alwynregular';
+  font-size: 1.2em;
+  background-color: #7b7b7b;
+  padding: 50px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .wilders {
@@ -139,6 +165,7 @@ footer {
   background-color: #58c4b8;
   height: 150px;
   font-family: 'alwynbold';
+  color: #f1f1f1;
   border-radius: 15px;
   margin-left: 14px;
   margin-right: 14px;
@@ -146,6 +173,16 @@ footer {
 
 .footer {
   margin-top: 15px;
+}
+
+.gif {
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.gifww {
+  border-radius: 15px;
+  margin-top: 20px;
 }
 
 /* Mettre des media queries pour l'affichage sur devices, pour remettre le formulaire en largeur 100% */

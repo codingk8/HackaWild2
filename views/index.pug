@@ -1,19 +1,23 @@
 extends layout
 
 block content
-  // Section 1 début Texte d'accueil
-  section#s1
+  // Section début Inscription texte d'accueil
+  p.textconnect Tu es déjà membre ? Tu peux te connecter en cliquant sur le bouton ci-joint  
+    a(href="/login" class="btn bleu btconnect") Se connecter
+  section.sectioninscription
     p Tu es Wilder 🦄 et tu veux te connecter à tes camarades Wilders 🦉 🐼 🦍 ?
     p Tu es au bon endroit ! 👏
     br
-    p Sur ce site, tu peux t'inscrire 📝, indiquer ta date 👶 de naissance et ton adresse 🏕.
-    p
-      | ✨ Une fois connecté, tu vois les dates d'anniversaire 🎂 de tes camarades et lesquels sont tes voisins 🏘. ✨
-  // Section 1 Fin Texte d'accueil
-  // Section 2 début Le formulaire
+    p Avec le formulaire ci-dessous, tu peux t'inscrire 📝, indiquer ta date 👶 de naissance et ton adresse 🏕.
+    
+    p ✨ Une fois connecté, tu verras les dates d'anniversaire 🎂 de tes camarades et lesquels sont tes voisins 🏘. ✨
+  // Section fin Inscription texte d'accueil
+  // Section début Le formulaire d'inscription
   section.sectionform
     .containerform
       form#form(method="POST")
+        p.required Tous les champs sont nécessaires à ton inscription.
+        p.required Merci de veiller à bien les renseigner.
         .form-group
           label(for='prenom') Prénom
           input#prenom.form-control(type='text', required='', placeholder='Inscris ici ton prénom' name="prenom")
@@ -39,4 +43,4 @@ block content
           label(for='ville') Ville
           input#ville.form-control(type='text', required='', placeholder='Ville' name="ville")
         button.btn.orange(type='submit') Je rejoins le groupe !
-  // Section 2 fin Le formulaire
+  // Section fin Le formulaire d'inscription
