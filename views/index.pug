@@ -18,7 +18,7 @@ block content
           label(for='prenom') Prénom
           input#prenom.form-control(type='text', required='', placeholder='Inscris ici ton prénom' name="prenom")
         .form-group
-          label(for='nom') Password
+          label(for='nom') Nom
           input#nom.form-control(type='text', required='', placeholder='Inscrit ici ton nom' name="nom")
         .form-group
           label(for='identifiant') Identifiant
@@ -28,7 +28,7 @@ block content
           input#motdepasse.form-control(type='password', required='', placeholder='Tu peux choisir ton mot de passe' name="motdepasse")
         .form-group
           label(for='naissance') Date de naissance
-          input#naissance.form-control(type='text', required='', placeholder='Respecte le format AAA-MM-JJ s\'il te plait!' name="naissance")
+          input#naissance.form-control(type='date', required='', placeholder='Respecte le format AAA-MM-JJ s\'il te plait!' name="naissance")
         .form-group
           label(for='adresse') Adresse
           input#adresse.form-control(type='text', required='', placeholder="C'est bien rangé chez toi !" name="adresse")
@@ -38,5 +38,5 @@ block content
         .form-group
           label(for='ville') Ville
           input#ville.form-control(type='text', required='', placeholder='Ville' name="ville")
-        button.btn.btn-default.orange(type='submit') Je rejoins le groupe !
+        button.btn.orange(type='submit') Je rejoins le groupe !
   // Section 2 fin Le formulaire
