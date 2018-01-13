@@ -45,7 +45,9 @@ router.get('/motdepasseoublie', function (req, res, next) {
 
 /* POST Prise en compte des informations d'inscription qui fonctionne avec la bdd yeah */
 router.post('/', function (req, res, next) {
-	connection.query('INSERT INTO wilders (prenom, nom, email, motdepasse, naissance, adresse, codepostal, ville) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [req.body.prenom, req.body.nom, req.body.email, req.body.motdepasse, req.body.naissance, req.body.adresse, req.body.codepostal, req.body.ville], function (error) {
+	connection.query('INSERT INTO wilders (prenom, nom, email, motdepasse, naissance, adresse, codepostal, ville) 
+	VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [req.body.prenom, req.body.nom, req.body.email, req.body.motdepasse, req.body.naissance, req.body.adresse, req.body.codepostal, req.body.ville], 
+	function (error) {
 		if (error) {
 			console.log(error);
 		} else {

@@ -312,6 +312,8 @@ PublishScripts/
 *.nuget.targets
 
 # Microsoft Azure Build Output
+config.js
+
 csx/
 *.build.csdef
 
